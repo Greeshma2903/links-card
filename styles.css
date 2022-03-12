@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;0,600;1,200&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap");
+
+:root {
+  --very-very-dark-blue: #0a0a16;
+  --blurple: #320072;
+  --dark-peach: #ff6a6a;
+  --black: #000000;
+  --green-olive: #519700;
+  --blue-violet: #5957ff;
+  --white: #ffffff;
+
+  --font-fam: "Libre Franklin", "Poppins", sans-serif;
+  --font-para: 15px;
+}
+
+* {
+  margin: 0;  
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= styles ================== */
+
+body {
+  font-family: var(--font-fam);
+  font-size: var(--font-para);
+  background: var(--very-very-dark-blue);
+  color: var(--white);
+
+  max-width: 1600px;
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  margin: 10% 4%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+section {
+  background: linear-gradient(45deg, var(--blurple), rgb(0, 77, 122));
+  border-radius: 15px;
+  padding: 10% 8%;
+  margin: 1rem;
+
+  min-height: 40%;
+
+  /* center-elements */
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================ section 1 =============== */
+#about {
+  text-align: center;
+}
+
+#about img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-bottom: 1rem;
+}
+
+h3#avatar-designation {
+  font-size: 12px;
+  color: var(--dark-peach);
+}
+
+p#avatar-about {
+  margin-top: 10%;
+  font-size: var(--font-para);
+}
+
+/* ================ section 2 =============== */
+#links {
+  justify-content: space-evenly;
+}
+
+.links-sub-section {
+  width: 100%;
+}
+
+.link-head h2 {
+  font-size: 1.2rem;
+}
+
+.links-container {
+  list-style-type: none;
+  padding: 0.5rem;
+
+  display: flex;
+  justify-content: stretch;
+  flex-wrap: wrap;
+}
+
+.links-container li {
+  margin: 0.5rem;
+  padding: 0.5rem 0.7rem;
+  border-radius:20px;
+}
+
+.links-container li:nth-child(2n) {
+  background-color:var(--blue-violet);
+}
+
+.links-container li:nth-child(2n+1) {
+  background-color:var(--green-olive);
+}
+
+/* =============== media query ============== */
+@media screen and (min-width: 1100px) {
+  main {
+    margin: auto 14%;
+  }
+
+  section {
+    flex-basis: 30%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    margin: 0 8%;
+    flex-direction: row;
+    justify-content: space-around;  
+  }
+
+  section {
+    padding: 4% 3%;
+    flex-basis: 40%;
+    min-height: 40%;
+  }
+
+}
