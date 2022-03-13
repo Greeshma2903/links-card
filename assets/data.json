@@ -1,0 +1,58 @@
+{
+  "name": "Medam Greeshma",
+  "designation": "Frontend Developer",
+  "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rem,sint quos quasi ad ipsum ducimus laudantium soluta. Alias, eos.",
+  "linksContainer": [
+    {
+      "type": "",
+      "links": [
+        {
+          "heading": "portfolio",
+          "url": "https://greeshma-portfolio.netlify.app/"
+        },
+        {
+          "heading": "resume",
+          "url": "https://docs.google.com/document/d/1rEThcj6hnPaQFr_4PIectWARRWd1ld15/edit?usp=sharing&ouid=115135829243562507351&rtpof=true&sd=true"
+        }
+      ]
+    },
+    {
+      "type": "socials",
+      "links": [
+        {
+          "heading": "twitter",
+          "url": "https://twitter.com/greeshmamedam"
+        },
+        {
+          "heading": "linkedin",
+          "url": "https://www.linkedin.com/in/m-greeshma/"
+        },
+        {
+          "heading": "discord",
+          "url": "https://discord.com/users/748202877566320750"
+        }
+      ]
+    },
+    {
+      "type": "developer handles",
+      "links": [
+        {
+          "heading": "github",
+          "url": "https://github.com/greeshma2903"
+        },
+        {
+          "heading": "leetcode",
+          "url": "https://leetcode.com/Greeshma2903/"
+        },
+        {
+          "heading": "devpost",
+          "url": "https://devpost.com/Greeshma2903"
+        },
+        {
+          "heading": "hashnode",
+          "url": "https://gree.hashnode.dev/"
+        }
+      ]
+    }
+  ]
+}

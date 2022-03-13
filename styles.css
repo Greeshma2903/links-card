@@ -10,11 +10,11 @@
   --white: #ffffff;
 
   --font-fam: "Libre Franklin", "Poppins", sans-serif;
-  --font-para: 15px;
+  --font-para: 16px;
 }
 
 * {
-  margin: 0;  
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -91,6 +91,7 @@ p#avatar-about {
 }
 
 .link-head h2 {
+  text-transform: capitalize;
   font-size: 1.2rem;
 }
 
@@ -105,16 +106,33 @@ p#avatar-about {
 
 .links-container li {
   margin: 0.5rem;
-  padding: 0.5rem 0.7rem;
-  border-radius:20px;
+  padding: 0.5rem;
+  border-radius: 20px;
 }
 
 .links-container li:nth-child(2n) {
-  background-color:var(--blue-violet);
+  background-color: var(--blue-violet);
 }
 
-.links-container li:nth-child(2n+1) {
-  background-color:var(--green-olive);
+.links-container li:nth-child(2n + 1) {
+  background-color: var(--green-olive);
+}
+
+.links-container li a {
+  padding:inherit;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.links-container li a:hover {
+  text-decoration: underline;
+}
+
+.links-container li:hover {
+  background-color: var(--black);
+  box-shadow: 0 0 10px 1px rgba(20, 75, 255, 0.479);
+  
+
 }
 
 /* =============== media query ============== */
@@ -132,13 +150,12 @@ p#avatar-about {
   main {
     margin: 0 8%;
     flex-direction: row;
-    justify-content: space-around;  
+    justify-content: center;
   }
 
   section {
     padding: 4% 3%;
-    flex-basis: 40%;
+    flex-basis: 35%;
     min-height: 40%;
   }
-
 }
