@@ -78,7 +78,8 @@ h3#avatar-designation {
 
 p#avatar-about {
   margin-top: 10%;
-  font-size: var(--font-para);
+  font-size: 0.8rem;
+  line-height: 1.5;
 }
 
 /* ================ section 2 =============== */
