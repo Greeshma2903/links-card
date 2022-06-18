@@ -18,15 +18,15 @@ const loadData = async function () {
   avatarAbout.textContent = data.about;
 
   for (let i = 0; i < data.linksContainer.length; i++) {
-    await loadLinkSection(data.linksContainer[i], i);
+    loadLinkSection(data.linksContainer[i], i);
   }
 
-//   data.linksContainer.forEach(function (linkObject, index) {
-//     loadLinkSection(linkObject, index);
-//   });
+  //   data.linksContainer.forEach(function (linkObject, index) {
+  //     loadLinkSection(linkObject, index);
+  //   });
 };
 
-async function loadLinkSection(linkObject, count) {
+function loadLinkSection(linkObject, count) {
   const subHTML = `
       <div class="links-sub-section">
           <div class="link-head">
@@ -40,7 +40,7 @@ async function loadLinkSection(linkObject, count) {
   linksSection.insertAdjacentHTML("beforeend", subHTML);
 
   for (let i = 0; i < linkObject.links.length; i++) {
-    let link = await getLink(linkObject.links[i]);
+    let link = getLink(linkObject.links[i]);
 
     document
       .querySelectorAll(".links-container")
@@ -48,9 +48,12 @@ async function loadLinkSection(linkObject, count) {
   }
 }
 
-async function getLink(link) {
+function getLink(link) {
   const linkEle = `
     <li class="link">
+    <div class="icon-container">
+      <img src="${link.link}" alt="${link.alt}" />
+    </div>
     <a href="${link.url}" target="_blank" rel="noreferrer noopener">${link.heading}</a>
     </li>
   `;
@@ -59,25 +62,3 @@ async function getLink(link) {
 }
 
 loadData();
-
-/* <li class="link">
-<a href="https://twitter.com/greeshmamedam">twitter</a>
-</li> 
-
-<div class="links-sub-section">
-    <div class="link-head socials">
-    <h2>Socials</h2>
-    </div>
-    <ul class="links-container">
-    <li class="link">
-        <a href="https://twitter.com/greeshmamedam">twitter</a>
-    </li>
-    <li class="link">
-        <a href="https://twitter.com/greeshmamedam">twitter</a>
-    </li>
-    <li class="link">
-        <a href="https://twitter.com/greeshmamedam">twitter</a>
-    </li>
-    </ul>
-</div>
-*/
