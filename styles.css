@@ -33,6 +33,7 @@ body {
   min-height: 100vh;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -136,6 +137,20 @@ p#avatar-about {
 
 .icon-container img {
   width: 20px;
+}
+
+/* ================ footer ================== */
+
+footer {
+  height: 50px;
+  position: relative;
+  bottom: 0;
+  letter-spacing:1px;
+}
+
+footer a {
+  color: var(--white);
+  text-underline-offset: 2px;
 }
 
 /* =============== media query ============== */
