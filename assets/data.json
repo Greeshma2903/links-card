@@ -8,12 +8,14 @@
       "links": [
         {
           "heading": "portfolio",
-          "link": "./assets/paperclip.svg",
+          "link": "./assets/link-2.svg",
+          "alt": " ",
           "url": "https://greeshma-portfolio.netlify.app/"
         },
         {
           "heading": "resume",
-          "link": "./assets/paperclip.svg",
+          "link": "./assets/link-2.svg",
+          "alt": " ",
           "url": "https://docs.google.com/document/d/1rEThcj6hnPaQFr_4PIectWARRWd1ld15/edit?usp=sharing&ouid=115135829243562507351&rtpof=true&sd=true"
         }
       ]
@@ -24,16 +26,19 @@
         {
           "heading": "twitter",
           "link": "./assets/twitter.svg",
+          "alt": "twitter icon",
           "url": "https://twitter.com/greeshmamedam"
         },
         {
           "heading": "linkedin",
-          "link": "./assets/linkedin",
+          "link": "./assets/linkedin.svg",
+          "alt": "linkedin icon",
           "url": "https://www.linkedin.com/in/m-greeshma/"
         },
         {
           "heading": "discord",
           "link": "./assets/discord.svg",
+          "alt": "discord icon",
           "url": "https://discord.com/users/748202877566320750"
         }
       ]
@@ -44,26 +49,31 @@
         {
           "heading": "github",
           "link": "./assets/github.svg",
+          "alt": "github icon",
           "url": "https://github.com/greeshma2903"
         },
         {
           "heading": "codepen",
           "link": "./assets/codepen.svg",
+          "alt": "codepen icon",
           "url": "https://codepen.io/GreeshmaMedam"
         },
         {
           "heading": "leetcode",
-          "link": "./assets/users.svg",
+          "link": "./assets/user.svg",
+          "alt": " ",
           "url": "https://leetcode.com/Greeshma2903/"
         },
         {
           "heading": "devpost",
-          "link": "./assets/users.svg",
+          "link": "./assets/user.svg",
+          "alt": " ",
           "url": "https://devpost.com/Greeshma2903"
         },
         {
           "heading": "hashnode",
           "link": "./assets/pen-tool.svg",
+          "alt": "pen icon",
           "url": "https://gree.hashnode.dev/"
         }
       ]

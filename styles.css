@@ -5,12 +5,13 @@
   --blurple: #320072;
   --dark-peach: #ff6a6a;
   --black: #000000;
-  --green-olive: #519700;
-  --blue-violet: #5957ff;
+  --green-olive: #60b102;
+  --blue-violet: #5957fa;
   --white: #ffffff;
 
   --font-fam: "Libre Franklin", "Poppins", sans-serif;
-  --font-para: 16px;
+  --font-para: 13px;
+  --font-para-lg: 14px;
 }
 
 * {
@@ -85,10 +86,9 @@ p#avatar-about {
 /* ================ section 2 =============== */
 #links {
   justify-content: space-evenly;
-}
-
-.links-sub-section {
-  width: 100%;
+  display: grid;
+  text-align: center;
+  gap: 1rem;
 }
 
 .link-head h2 {
@@ -101,60 +101,86 @@ p#avatar-about {
   padding: 0.5rem;
 
   display: flex;
-  justify-content: stretch;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .links-container li {
   margin: 0.5rem;
-  padding: 0.5rem;
+  padding: 0.5rem 0.8rem;
   border-radius: 20px;
-}
 
-.links-container li:nth-child(2n) {
-  background-color: var(--blue-violet);
-}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-.links-container li:nth-child(2n + 1) {
-  background-color: var(--green-olive);
+  background: var(--green-olive);
+  transition: all ease-in-out 0.3s;
 }
 
 .links-container li a {
-  padding: inherit;
   text-decoration: none;
-  color: var(--white);
-}
-
-.links-container li a:hover {
-  text-decoration: underline;
+  color: var(--black);
 }
 
 .links-container li:hover {
-  background-color: var(--black);
+  background: var(--blue-violet);
   box-shadow: 0 0 10px 1px rgba(20, 75, 255, 0.479);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.icon-container {
+  margin-right: 12px;
+}
+
+.icon-container img {
+  width: 20px;
 }
 
 /* =============== media query ============== */
-@media screen and (min-width: 1100px) {
+/* screen: tablet */
+@media screen and (min-width: 768px) {
   main {
-    margin: auto 14%;
-  }
-
-  section {
-    flex-basis: 30%;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  main {
-    margin: 0 8%;
+    margin: 0 6%;
     flex-direction: row;
     justify-content: center;
   }
 
   section {
-    padding: 4% 3%;
-    flex-basis: 35%;
-    min-height: 40%;
+    flex-basis: 50%;
+  }
+
+  #links {
+    padding: 5% 1%;
+  }
+
+  #about {
+    padding: 5% 3%;
+  }
+}
+
+/* screen: desktop */
+@media screen and (min-width: 1200px) {
+  main {
+    margin: auto 12%;
+    font-size: var(--font-para-lg);
+  }
+
+  #links {
+    flex-basis: 50%;
+    padding: 5% 4%;
+  }
+
+  #about {
+    flex-basis: 30%;
+  }
+
+  .links-container li {
+    padding: 0.5rem 1rem;
+  }
+
+  .icon-container img {
+    width: 22px;
   }
 }
