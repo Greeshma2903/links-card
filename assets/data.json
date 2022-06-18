@@ -8,10 +8,12 @@
       "links": [
         {
           "heading": "portfolio",
+          "link": "./assets/paperclip.svg",
           "url": "https://greeshma-portfolio.netlify.app/"
         },
         {
           "heading": "resume",
+          "link": "./assets/paperclip.svg",
           "url": "https://docs.google.com/document/d/1rEThcj6hnPaQFr_4PIectWARRWd1ld15/edit?usp=sharing&ouid=115135829243562507351&rtpof=true&sd=true"
         }
       ]
@@ -21,14 +23,17 @@
       "links": [
         {
           "heading": "twitter",
+          "link": "./assets/twitter.svg",
           "url": "https://twitter.com/greeshmamedam"
         },
         {
           "heading": "linkedin",
+          "link": "./assets/linkedin",
           "url": "https://www.linkedin.com/in/m-greeshma/"
         },
         {
           "heading": "discord",
+          "link": "./assets/discord.svg",
           "url": "https://discord.com/users/748202877566320750"
         }
       ]
@@ -38,18 +43,27 @@
       "links": [
         {
           "heading": "github",
+          "link": "./assets/github.svg",
           "url": "https://github.com/greeshma2903"
         },
         {
+          "heading": "codepen",
+          "link": "./assets/codepen.svg",
+          "url": "https://codepen.io/GreeshmaMedam"
+        },
+        {
           "heading": "leetcode",
+          "link": "./assets/users.svg",
           "url": "https://leetcode.com/Greeshma2903/"
         },
         {
           "heading": "devpost",
+          "link": "./assets/users.svg",
           "url": "https://devpost.com/Greeshma2903"
         },
         {
           "heading": "hashnode",
+          "link": "./assets/pen-tool.svg",
           "url": "https://gree.hashnode.dev/"
         }
       ]

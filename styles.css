@@ -120,7 +120,7 @@ p#avatar-about {
 }
 
 .links-container li a {
-  padding:inherit;
+  padding: inherit;
   text-decoration: none;
   color: var(--white);
 }
@@ -132,8 +132,6 @@ p#avatar-about {
 .links-container li:hover {
   background-color: var(--black);
   box-shadow: 0 0 10px 1px rgba(20, 75, 255, 0.479);
-  
-
 }
 
 /* =============== media query ============== */
